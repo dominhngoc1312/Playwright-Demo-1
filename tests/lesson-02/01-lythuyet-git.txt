@@ -1,0 +1,5 @@
+lệnh: 
+1. git init => Khởi tạo vùng working directory từ thư mục được quản lý bởi git
+2. git add <file_name>, => Thêm file name vào staging
+3. git add . => Thêm tất cả các file vào staging
+4. git commit -m “message” => commit file lên repository
