@@ -1,0 +1,6 @@
+
+// git commit --amend -m”<message>”: đổi tên commit cuối cùng trên vùng Repository thành thành <message>
+
+// git restore --staged <file>: undo commit từ vùng Staging về vùng Working directory
+
+// git reset HEAD~1. : undo 1 commit từ Repository về vùng Working directory
