@@ -17,6 +17,8 @@ test('bai thuc hanh 1', async ({ page }) => {
         await page.locator("//a[@href='04-xpath-personal-notes.html']").click();
     });
 
+    // a. Thêm mới 10 note
+
 
     await test.step('Add Note 1', async () => {
         await page.locator("//input[@id='note-title']").fill("click");
@@ -56,12 +58,6 @@ test('bai thuc hanh 1', async ({ page }) => {
         await page.locator("//button[@id='add-note']").click();
     });
 
-
-
-
-
-
-
     await test.step('Add Note 7', async () => {
         await page.locator("//input[@id='note-title']").fill("selectOption");
         await page.locator("//textarea[@id='note-content']").fill("Hàm selectOption dùng để chọn một hoặc nhiều option trong thẻ select dropdown");
@@ -86,5 +82,14 @@ test('bai thuc hanh 1', async ({ page }) => {
         await page.locator("//button[@id='add-note']").click();
     });
 
+
+
+
+//b. Thực hiện search với keyword “một hoặc nhiều”*/
+
+await test.step('Search keyword', async () => {
+        await page.locator("//input[@id='search']").fill("một hoặc nhiều");
+        await page.locator("//input[@id='search']").press('Backspace');
+    });
 
 });
